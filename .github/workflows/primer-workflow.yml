@@ -5,7 +5,7 @@ on:  # Eventos que lo activan
     branches: [ main ]
 
 jobs:  # Conjunto de tareas
-  saludar:
+  Arquitectura de Computadoras:
     runs-on: ubuntu-latest  # Máquina virtual gratuita
     steps:  # Pasos secuenciales
       - name: Checkout código

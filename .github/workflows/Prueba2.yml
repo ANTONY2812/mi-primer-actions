@@ -12,7 +12,7 @@ jobs:  # Conjunto de tareas
         uses: actions/checkout@v4  # Clona el repo
 
       - name: Saludo inicial
-        run: echo "¡Workflow activado desde cero! 👋"
+        run: echo "¡Workflow activado desde cero! "
 
       - name: Lista archivos
         run: ls -la

@@ -1,0 +1,21 @@
+name: Mi Primer Workflow Desde Cero  # Nombre visible en Actions
+
+on:  # Eventos que lo activan
+  push:  # Al hacer push a cualquier branch
+    branches: [ main ]
+
+jobs:  # Conjunto de tareas
+  saludar:
+    runs-on: ubuntu-latest  # Máquina virtual gratuita
+    steps:  # Pasos secuenciales
+      - name: Checkout código
+        uses: actions/checkout@v4  # Clona el repo
+
+      - name: Saludo inicial
+        run: echo "¡Workflow activado desde cero! 👋"
+
+      - name: Lista archivos
+        run: ls -la
+
+      - name: Fecha actual
+        run: date
